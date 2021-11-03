@@ -1,0 +1,36 @@
+{
+  "name": "vue-spotlight",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-spotlight.umd.js",
+  "module": "./dist/vue-spotlight.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-spotlight.es.js",
+      "require": "./dist/vue-spotlight.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "test": "jest ./tests",
+    "test-w": "jest ./tests --watch"
+  },
+  "dependencies": {
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/test-utils": "^2.0.0-rc.16",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4",
+    "vue-jest": "^5.0.0-alpha.10",
+    "vue-tsc": "^0.3.0"
+  }
+}
