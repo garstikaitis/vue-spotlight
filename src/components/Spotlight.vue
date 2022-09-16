@@ -23,18 +23,18 @@
 </template>
 
 <script setup lang="ts">
-interface Props {
-  items: SpotlightItem[];
-  openKey: string[];
-  closeKey: string[];
-}
-
 import { ref, onUnmounted, onMounted } from "vue";
 import { arraysMatch } from "../helpers/areArraysEqual";
 import { SpotlightItem } from "../types";
 
 import SpotlightInput from "./SpotlightInput.vue";
 import SpotlightList from "./SpotlightList.vue";
+
+interface Props {
+  items: SpotlightItem[];
+  openKey: string[];
+  closeKey: string[];
+}
 
 const inputValue = ref("");
 const isVisible = ref(false);
@@ -58,7 +58,7 @@ const handleSelectItem = (item: SpotlightItem) => {
 
 const handleFilterSpotlightItems = (inputValue: string) => {
   if (inputValue.length) {
-    itemsToRender.value = props.items.filter((item) => {
+    itemsToRender.value = props.items.filter(item => {
       return (
         item.name.toLowerCase().includes(inputValue.toLowerCase()) ||
         item.description.toLowerCase().includes(inputValue.toLowerCase())

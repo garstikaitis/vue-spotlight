@@ -3,7 +3,6 @@
     :items="items"
     :open-key="['Meta', 'Shift']"
     :close-key="['Escape']"
-    @select-item="handleSelectItem"
   />
 </template>
 
@@ -17,10 +16,6 @@ body {
 import { SpotlightItem } from "./types";
 import { ref } from "vue";
 import Spotlight from "./components/Spotlight.vue";
-
-const handleSelectItem = (item: SpotlightItem) => {
-  console.log(item);
-};
 
 const items = ref<SpotlightItem[]>([
   {
@@ -43,13 +38,13 @@ const items = ref<SpotlightItem[]>([
   },
   {
     name: "Current user",
-    description: "Peter Griffin",
+    description: "Jon Doe",
     onSelect: () => alert("Current user"),
   },
   {
-    name: "7",
-    description: "7",
-    onSelect: () => alert("7"),
+    name: "Logout",
+    description: "Logout from the app",
+    onSelect: () => alert("Logout"),
   },
   {
     name: "8",
