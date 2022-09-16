@@ -46,4 +46,4 @@ SpotlightItem is the core controller to say how your items should be rendered.
 
 ## Contributing
 
-Refer to [Contributing.md](https://raw.githubusercontent.com/garstikaitis/vue-spotlight/main/CONTRIBUTING.md)
+Refer to [Contributing.md](https://github.com/garstikaitis/vue-spotlight/blob/main/CONTRIBUTING.md)
