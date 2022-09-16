@@ -12,7 +12,7 @@ Currently only vue v3 is supported.
 
 ## Instalation
 
-Run `npm install vue-spotlight`
+Run `npm install vue3-spotlight`
 
 In your main app entry file add:
 
